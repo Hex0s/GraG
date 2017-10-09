@@ -17,7 +17,6 @@ public class Cardynal : MonoBehaviour {
     public Canvas eq;
     public Text ammo;
     public GameObject gunPistol;
-    public GameObject granateGranate;
     // Use this for initialization
     void Start()
     {
@@ -62,7 +61,6 @@ public class Cardynal : MonoBehaviour {
                 granateimage.enabled = true;
                 ammo.text = granate.number + "/3";
                 gunPistol.SetActive(false);
-              granateGranate.SetActive(true);
             }
             else
             {
@@ -75,7 +73,6 @@ public class Cardynal : MonoBehaviour {
                 granateimage.enabled = false;
                 ammo.text = pistol.ammo.ToString() + ("/10");
                 gunPistol.SetActive(true);
-            granateGranate.SetActive(false);
             }
             else
             {
